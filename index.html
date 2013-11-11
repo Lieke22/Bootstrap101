@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Declaratieformulier voor Erik Pragt">
+    <meta name="author" content="Lieke Boon">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Declaratieformulier in Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet"/>
+  
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Declaratie formulier</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+	<form class="form-horizontal" role="form">
+ 	  
+	<div class="form-group">
+    	    <label for="inputnaam1" class="col-lg-2 control-label">Cliëntnaam</label>
+    	    <div class="col-lg-10">
+      	      <input type="text" class="form-control" id="inputnaam1" placeholder="Naam">
+    	    </div>
+  	</div>
+  	  
+	<div class="form-group">
+                <label for="inputGeboortedatum1" class="col-lg-2 control-label">Geboortedatum</label>
+		<div class="col-lg-10">
+		    <div class="input-group date">
+		    <span class="input-group-addon">
+                         <i class="row glyphicon glyphicon-calendar"></i> </span>
+            	         <input class="date-picker form-control" id="inputGeboortedatum1" type="text" data-date-format="dd-mm-yyyy" />
+          	    </div>
+                </div>
+	</div>
+
+	
+	<div class="form-group">
+    	  <label for="aanmaakdatum1" class="col-lg-2 control-label">Aanmaakdatum</label>
+    	  <div class="col-lg-10">
+		<div class="input-group date">
+		    <span class="input-group-addon">
+                         <i class="row glyphicon glyphicon-calendar"></i> </span>
+            	         <input class="date-picker form-control" id="aanmaakdatum1" type="text" data-date-format="dd-mm-yyyy" />
+          	</div>
+    	  </div>
+  	</div>
+	
+	<div class="form-group">
+	  <label for="dropdownbox1" class="col-lg-2 control-label">Selecteer medicijn</label>
+	  <div class="col-lg-10">
+		<select class="form-control" id="dropdownbox1">
+  		  <option>Aspirine</option>
+		  <option>Diclofenac</option>
+  		  <option>Ibuprofen</option>
+		  <option>Paracetamol</option>
+  		  <option>Trachitol</option>
+		</select>
+	  </div>
+	</div>
+	
+	<div class="form-group">
+    	  <label for="aantal1" class="col-lg-2 control-label">Aantal</label>
+    	  <div class="col-lg-10">
+      	    <input type="text" class="form-control" id="aantal1" placeholder="Aantal">
+    	  </div>
+  	</div>
+	
+	<div class="form-group">
+    	  <label for="receptNummer1" class="col-lg-2 control-label">Receptnummer</label>
+    	  <div class="col-lg-10">
+      	    <input type="text" class="form-control" id="receptNummer1" placeholder="Receptnummer">
+    	  </div>
+  	</div>
+	
+	<div class="form-group">
+   	 <label for="bedrag1" class="col-lg-2 control-label">Bedrag</label>
+	    <div class="col-lg-10">
+		<div class="input-group">
+  	    	  <span class="input-group-addon">&euro;</span>
+  	    	  <input type="text" class="form-control" id="bedrag1" placeholder="Bedrag">
+	    	  <span class="input-group-addon">.00</span>
+		</div>	
+	    </div>
+  	</div>
+
+	<div class="form-group">
+    	  <label for="emailAdres1" class="col-lg-2 control-label">E-mailadres</label>
+    	  <div class="col-lg-10">
+      	    <input type="text" class="form-control" id="emailAdres1" placeholder="E-mailadres">
+    	  </div>
+  	</div>
+
+  	<div class="form-group">
+    	  <div class="col-lg-offset-2 col-lg-10">
+      	    <button type="submit" class="btn btn-default">Verstuur</button>
+    	  </div>
+  	</div>
+   </form>
+	
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/date-time/bootstrap-datepicker.min.js"></script>
+    <script> $('.date-picker').datepicker(); </script>
+  </body>
+</html>
